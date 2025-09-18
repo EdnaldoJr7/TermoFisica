@@ -1,0 +1,182 @@
+@media (max-width: 1680px){
+    .areas a{
+        text-decoration: none;
+        flex: 1 1 45%;
+        max-width: 45%;
+        max-height: 35%;
+        padding: 20px;
+        transition: 0.4s ease-in-out;
+    }
+
+}
+
+@media (max-width: 1310px){
+
+    .menuBar div{
+        margin: 10px 20px;
+    } 
+    .menuBar div > a{
+        font-size: 1em;
+    }
+
+    .menuBar h1{
+        color: white;
+        font-size: 3em;
+        text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.26);
+    }
+
+    .menuBar p{font-size: 1em;}
+
+    .oQueE{
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    
+    .oQueE div{
+        justify-content: center;
+        padding: 2rem 0;
+        width: 100%;
+        margin: 0;
+        text-align: justify;
+    }
+
+    .areas a{
+        flex: 1 1 400px;
+    }
+
+    #definição {height: auto;}
+
+    #conceitos{height: auto;}
+    #conceitos article{padding-top: 5%;}
+    
+    #Sobre{height: auto;}
+    
+    #Sobre div{
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding: 5% 0;
+    }
+    
+    
+    .coluna2 p{
+        padding: 20px;
+        text-align: justify;
+    }
+    
+    .materiais a .botao{
+        font-size: 1rem;
+    }
+    
+}
+
+@media (max-width: 1070px){
+    
+    .menuBar.index{background-image: linear-gradient(to bottom, var(--cor5), var(--cor4));padding: 20px 0;}
+    .menuBar h1{color: white; font-size: 2em;text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.26);}
+    .menuBar p{font-size: 1.2rem;}
+    
+    .menuBar .options {
+        z-index: 3;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        justify-content: start;
+        text-align: center;
+        margin: 0;
+        top: 15vh;
+        width: 100%;
+        height: 0;
+        background-image: linear-gradient(to bottom, var(--cor5), var(--cor4));
+        transition: 0.5s;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+    
+    .menuBar .options a{font-size: 1.5rem;}
+    
+    .btn-menu {
+        background:none;
+        border: none;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        color: white;
+        padding-block: 1rem;
+        cursor: pointer;
+        margin-right: 3%;
+    }
+    
+    .btn-menu:focus-within ~ .options{
+        height: 100vh;
+        visibility: visible;
+        overflow-y: auto;
+    }
+    
+    .hamburguer {
+        border-top: 0.2rem solid;
+        width: 1.5rem;
+    }
+    
+    .hamburguer::before, .hamburguer::after{
+        content: "";
+        display: block;
+        width: 1.5rem;
+        height: 0.2rem;
+        background: currentColor;
+        margin-top: 0.35rem;
+    }
+    
+    button {font-size: 1.5rem; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+
+}
+
+@media (max-width: 800px){
+    
+    #home ul{
+        font-size: 1.5rem;
+    }
+    
+    #definição{
+        height: auto;
+    }
+    .areas{
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+    
+    .areas a{
+        max-width: 100%;
+        flex: auto;
+    }
+    
+    .coluna1 .galeria{
+        width: 100%;
+        height: auto;
+    }
+    
+    #home h1, #definição h1, #conceitos h1, #vertentes h1, #Sobre h1{
+        font-size: 2rem;
+    }
+    
+    #home h2, #definição h2, #conceitos h2, #vertentes h2, #Sobre h2{
+        font-size: 1.8rem;
+    }
+    
+    #home h3, #definição h3, #conceitos h3, #vertentes h3, #Sobre h3{
+        font-size: 1.5rem;
+    }
+    
+    #home p, #definição p, #conceitos p, #vertentes p, #Sobre p{
+        font-size: 1rem;
+    }
+    
+    #conceitos article h2{font-size: 32px;}
+    #conceitos article p{font-size: 16px;}
+    
+    .materiais a .botao{
+        padding: 10px;
+        font-size: 0.8rem;
+    }
+    
+}

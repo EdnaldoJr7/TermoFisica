@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TermoFísica - Termodinâmica</title>
+    <link rel="stylesheet" href="../estilo/estilos.css">
+    <link rel="stylesheet" href="../estilo/medias.css">
+    <link rel="shortcut icon" href="../imagens/TermoFísica-Logo.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    
+    <nav class="menuBar">
+        <div>
+            <h1>TermoFísica</h1>
+            <p>A sua plataforma de termologia!</p>
+        </div>
+        <button class="btn-menu">Menu <span class="hamburguer"></span></button>
+        <div class="options">
+            <a href="../index.html">
+                <span class="icon"><i class="bi bi-house"></i></i></span>
+                <span class="txt-link">Home</span>
+            </a>
+    
+            <a href="termometria.html">
+                <span class="icon"><i class="bi bi-thermometer-half"></i></span>
+                <span class="txt-link">Termometria</span>
+            </a>
+    
+            <a href="calorimetria.html">
+                <span class="icon"><i class="bi bi-sun"></i></i></span>
+                <span class="txt-link">Calorimetria</span>
+            </a>
+            
+            <a href="dilatometria.html">
+                <span class="icon"><i class="bi bi-arrows-expand-vertical"></i></span>
+                <span class="txt-link">Dilatometria</span>
+            </a>
+            
+            <a href="termodinamica.html">
+                <span class="icon"><i class="bi bi-fire"></i></i></span>
+                <span class="txt-link">Termodinâmica</span>
+            </a>
+        </div>
+    </nav>
+
+    <div class="espaçamento"></div>
+
+    <main>
+        <article>
+            <h1 style="text-align: center;">Termodinâmica</h1>
+            <h2>Introdução</h2>
+
+            <p>A Termodinâmica é a parte da Física responsável pelo estudo das transformações e interações existentes entre dois tipos específicos de energia: mecânica e térmica. Nessas transformações, ocorre a mudança de parâmetros específicos, sendo os principais objetos de estudo da termodinâmica. São eles:
+            </p>
+            <ul>
+                <li>Trabalho: Transferências de energia através de movimento.</li>
+                <li>Calor: Energia térmica em trânsito recebida ou concedida pelo corpo.</li>
+                <li>Energia interna: Corresponde à soma de todos os tipos de energia das partículas, entretanto, pode-se limitá-la a temperatura do corpo. </li>
+            </ul>
+            <p>SE LIGA!: O sinal negativo (-) para trabalho (t) e calor (Q) indicam que o corpo recebeu (não realizou) e concedeu (não recebeu) cada um deles, respectivamente.</p>
+            
+            <img src="../imagens/termodinamica/Locomotiva.jpeg" alt="">
+
+            <h2>Gases perfeitos</h2>
+            
+            <p>Um gás perfeito é um modelo teórico fundamentado em certas leis, que generaliza características de diferentes gases. Foi desenvolvido durante os séculos XVII e XIX, através da contribuição de estudiosos como Robert Boyle, Jacques Charles, Gay-Lussac e Paul Emile Clapeyron. Mesmo sendo uma aproximação do que acontece na realidade, esse modelo se mostra imprescindível no estudo de fenômenos termodinâmicos.</p>
+            <img src="../imagens/termodinamica/BalaoVapor.jpeg" alt="Balão a vapor">
+
+            <h3>Videoaula</h3>
+            <h4>Conceitos iniciais</h4>
+            <div class="video"><iframe width="560" height="315" src="https://www.youtube.com/embed/05uwoBAAUBI?si=4kTOSeanjUAg_l8g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+
+            <h3>Variáveis de Estado</h3>
+            <p><strong>Número (n)</strong>: Se refere à quantidade de partículas do gás em um dado espaço, geralmente delimitado. Sua unidade de medida principal é o [mol], cuja unidade equivale a 6,02.10^23 partículas/moléculas. </p>
+            
+            <p><strong>Volume (V)</strong>: Consiste no espaço ocupado pelo gás. As principais unidades de medida utilizadas são [L] e [m3], com a última pertencendo ao SI (Sistema Internacional).</p>
+            <p>SE LIGA!: 1m3 = 1000L</p>
+                
+            <p><strong>Temperatura (T)</strong>: Se refere à energia cinética total de todas as partículas do gás. As unidades mais utilizadas são [K] e [Celsius], com a primeira pertencendo ao SI.</p>
+            <p>SE LIGA!: T[K] = T[C] + 273</p>
+            
+            <p><strong>Pressão (p)</strong>: Consiste na força aplicada pelo gás nos limites do recipiente onde ele se encontra. As principais unidades são [atm], [Pa] e [mmHG], com a primeira pertencendo ao SI. </p>
+            <p>SE LIGA!: 1atm = 1.10^5 Pa = 760mmHG</p>
+
+            <h3>Leis de Comportamento</h3>
+            <p><strong>Lei de Boyle: </strong>Desenvolvida por Robert Boyle, essa lei afirma que quando há uma transformação isotérmica, isto é, com Temperatura (T) constante, Pressão (p) e volume (V) se alteram de maneira inversamente proporcional, ou seja, o aumento de um implica no decréscimo do outro.
+            </p>
+            <img src="../imagens/termodinamica/leiDeBoyle.jpeg" alt="gráfico da lei de Boyle">
+            <p><strong>Lei de Charles:</strong>Desenvolvida por Jacques Charles, essa lei afirma que quando há uma transformação isovolumétrica (isocórica, isométrica) , isto é, com Volume (V) constante, Pressão (p) e Temperatura (T) se alteram de maneira diretamente proporcional, ou seja, o aumento de um implica no aumento do outro, por exemplo.
+            </p>
+            <img src="../imagens/termodinamica/leiDeCharles.jpeg" alt="gráfico da lei de Boyle">
+            <p><strong>Lei de Charles e Gay-Lussac:</strong> Iniciada por Jacques Charles e concluída posteriormente com Gay-Lussac, essa lei afirma que quando há uma transformação adiabática, isto é, com Pressão (p) constante, Temperatura (T) e Volume (V) se alteram.
+            </p>
+            <img src="../imagens/termodinamica/LeiDeCharlesLussac.jpeg" alt="gráfico da lei de Boyle">
+
+            <h3>Equação de Clapeyron</h3>
+
+            <p>Paul Emile Clapeyron foi responsável por formular a equação que rege o estudo dos gases ideais, através da síntese de todas as leis já estabelecidas por outros estudiosos anteriormente. Com isso, ele chegou a seguinte equação: <strong>Pv = nRT</strong>, com R sendo uma constante denominada de “constante universal dos gases perfeitos”, e as outras grandezas sendo as variáveis de estado já expostas. <br><br>
+            Sob condições de CNTP (condições normais de temperatura e pressão), isto é T = 273K, p = 1atm e V = 22,4L, obtemos o valor de R, sendo R = 0,082 atm.L/Mol.K. Com isso, chegamos a lei geral dos gases:
+
+            <img src="../imagens/termodinamica/EquacaoClapeyron.jpeg" alt="Demonstração da equação de Clapeyron">
+            Através dessa equação, também conseguimos entender melhor fenômenos onde há mistura de gases, caracterizado matematicamente pela soma de seus números (N). Logo:
+
+            <img src="../imagens/termodinamica/MisturaGases1.jpeg" alt="Demonstração da equação de mistura de gases, parte 1">
+            <img src="../imagens/termodinamica/MisturaGases2.jpeg" alt="Demonstração da equação de mistura de gases, parte 2">
+            </p>
+
+            <h2>1a Lei da Termodinâmica</h2>
+
+            <img src="../imagens/termodinamica/UsinaNuclear.jpeg" alt="Usinas nucleares">
+            <p>Também conhecida como “Princípio da Conservação de Energia”, a 1ª lei da termodinâmica define uma equação responsável pela contabilidade energética em um corpo, através da relação entre os parâmetros enunciados anteriormente, dada por <strong>&Delta;U = Q- t</strong>.
+            Com isso, concluímos que a variação de energia interna (&Delta;U) está intimamente ligada com a diferença entre o calor (Q) recebido ou concedido e o Trabalho (t) recebido ou realizado.
+            </p>
+            <p>SE LIGA!: O sinal negativo (-) próximo ao valor do trabalho (t) pertence à fórmula, e não a ele! Ou seja, isso não significa que o corpo está recebendo trabalho.</p>
+
+
+            <h3>Transformações particulares</h3>
+            <p><strong>Transformação Isotérmica:</strong> Quando a temperatura se mantém constante, não há variação de energia interna (&Delta;U), logo a quantidade de calor (Q) é numericamente igual ao trabalho (t).
+            </p>
+
+            <p class="calculo"> &Delta;U = 0  ->  0 = Q - t  ->  <b>Q = t</b> </p>
+
+            <p><strong>Transformação Isovolumétrica:</strong> Quando o recipiente onde o gás se encontra se mantém com volume constante, significa que o gás não recebe nem realiza trabalho (t), logo todo o calor (Q) recebido ou concedido é usado na variação de energia interna (&Delta;U).
+            </p>
+
+            <p class="calculo"> t = 0  ->  ΔU = Q - 0  ->  <b>&Delta;U = Q</b> </p>
+
+            <p><strong>Transformação Isobárica:</strong> Quando a pressão se mantém constante, o trabalho de um corpo passa a depender da variação de volume (&Delta;V) do recipiente. Por também depender muito do volume (V), percebe-se certa semelhança com a transformação isovolumétrica, no entanto, naquela ocasião a pressão muda, nessa não.
+            </p>
+
+            <p class="calculo"> t = p.&Delta;V -> &Delta;U = Q - t  ->  <b>&Delta;U = Q - p.&Delta;V</b> </p>
+
+            <p><strong>Transformação Adiabática:</strong> Ocorre quando não ocorre trocas de calor. Assim, a variação da energia interna (&Delta;U) depende exclusivamente do trabalho (t) exercido ou recebido.
+            </p>
+
+            <p class="calculo"> Q = 0  ->  &Delta;U = 0 - t  ->  <b>&Delta;U = - t</b></p>
+
+            <h3>Videoaula</h3>
+            <h4>Primeira lei da termodinâmica</h4>
+            <div class="video"><iframe width="560" height="315" src="https://www.youtube.com/embed/A4kL763ger0?si=0--PKA_HcCgHsUyl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+
+            <h2>2a Lei da Termodinâmica</h2>
+            <p>A segunda lei da termodinâmica está intimamente relacionada com os dispositivos conhecidos como “máquinas térmicas” e afirma que é impossível construir uma máquina como essa que, trabalhando em transformações cíclicas, converta toda a energia recebida (Q) integralmente em trabalho (t).
+                
+            <h3>Máquinas térmicas</h3>
+            <p>As máquinas térmicas são aparelhos que operam em ciclos termodinâmicos e que podem transformar parte da energia, que está em forma de calor, em trabalho mecânico. Funcionam através de  2 extremidades: uma quente (“fonte quente”) e outra fria (“fonte fria”), por onde o calor irá percorrer. Também necessita de um fluído operante, colocado entre essas extremidades para sofrer modificações em suas variáveis de estado e realizar trabalho conforme o calor transita. Como já dito no próprio enunciado da segunda lei da termodinâmica, não é possível que haja a transformação integral do calor absorvido em trabalho, ou seja, sempre haverá uma perda, seja na forma de vibração, atrito, ruídos sonoros, entre outras.
+            </p>
+            <img src="../imagens/termodinamica/IlustracaoMaquinaTermica.jpg" alt="Ilustração de uma máquina térmica">
+
+            <h3>Rendimento</h3>
+            <p>As máquinas, no geral, não são perfeitas, portanto, caso seja necessário saber o rendimento exato de um aparelho, basta utilizar da seguinte fórmula: <p style="text-align: center; color:red; font-size: 1em;">OBS: o trabalho é justamente a diferença entre o calor cedido pela fonte quente e o calor "desperdiçado" pela fonte fria</p><img src="../imagens/termodinamica/FormulaCarnot1.jpeg" alt="Fórmula de rendimento das máquinas térmicas">
+
+                <ul>
+                    <li>N é o rendimento;</li>
+                    <li>t é o trabalho mecânico, dado em joules ou calorias;</li>
+                    <li>Qa é o calor proveniente da fonte quente, também dado em joules ou calorias;</li>
+                    <li>Qb é o calor recebido pela fonte fria, dado em joules ou calorias.</li>
+                </ul>
+            </p>
+
+            <h3>Teorema de Carnot</h3>
+            <p>O teorema de Carnot indica que mesmo a máquina térmica ideal (aquela que não dissipa nenhuma quantidade de energia em razão do atrito entre os mecanismos) apresenta um limite de rendimento máximo, dependente da razão entre as temperaturas de sua fonte quente e fria, dadas em kelvin: <img src="../imagens/termodinamica/FormulaCarnot2.jpeg" alt="Fórmula do teorema de Carnot">
+                <ul>
+                    <li>N é o rendimento;</li>
+                    <li>Ta é a temperatura da fonte fria;</li>
+                    <li>Tb é a temperatura da fonte quente.</li>
+                </ul>
+            </p>
+                
+            <p>
+                Analisando a fórmula acima, chega-se à conclusão de que a forma de atingir um rendimento de 100% em uma máquina ideal seria se Tb (temperatura da fonte fria) fosse nula, ou seja, equivale-se a zero kelvin, porém, essa temperatura é inatingível.
+            </p>
+
+            <h3>Videoaula</h3>
+            <h4>Ciclo de Carnot</h4>
+            <div class="video"><iframe width="560" height="315" src="https://www.youtube.com/embed/4sHhdf9yaEI?si=M6TmBkr1qIDqv5z1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+            
+            <h2>Materiais de apoio</h2>
+            <div  class="materiais" style="text-align: center; width: 50vw; margin: auto;">
+                <a href="https://drive.google.com/drive/u/1/folders/1UgL2ZpgLZ2ejG32qPXFYPwOV0lHSYgou"><div class="botao">SLIDE</div></a>
+                <a href="https://drive.google.com/drive/u/1/folders/1Z7sd71QIYxnN5xI0RKW-ncohNoE6YbSB"><div class="botao">LISTA DE EXERCÍCIOS</div></a>
+            </div>
+
+
+        </article>
+    </main>
+    
+</body>
+</html>

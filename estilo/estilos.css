@@ -1,0 +1,508 @@
+@charset "UTF-8";
+
+
+:root{
+    --cor1: rgb(255, 161, 67);
+    --cor2: #d6873c;
+    --cor3: #D8572A;
+    --cor4: #C32F27;
+    --cor5: #881600;
+    --cor6: #E3E36A; 
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: var(--cor1);
+    /*overflow-x: hidden; -> Para resolver o excesso de conteúdo na horizontal*/
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/*BARRA DE MENU SUPERIOR*/
+.menuBar{
+    display: flex;
+    padding-bottom: 20px;
+    width: 100%;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(to bottom, var(--cor5), var(--cor4));
+    z-index: 2; /*Acrescentei isso devido aos videos que ficavam sobrepostos*/
+    padding: 20px 0;
+}
+
+.menuBar.index{
+    background-image: none;
+}
+
+.menuBar div{
+    /*removi largura maxima e minima para fins didáticos*/
+    justify-content: space-around;
+    margin: 10px 20px;
+} 
+.menuBar div > a{
+    color: var(--cor6);
+    padding: 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.3em;
+    transition-duration: 0.5s;
+
+}
+
+.menuBar div > a:hover{
+    background-color:var(--cor5);
+    color: rgb(201, 201, 2);
+}
+
+.menuBar h1{
+    color: white;
+    font-size: 4em;
+    font-weight: normal;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.26);
+}
+
+.menuBar p{
+    font-size: 1.2em;
+    color: white;
+}
+
+.btn-menu {display: none;} /*Botão para menu mobile*/
+
+/*INDEX*/
+section{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(to bottom, var(--cor2), var(--cor3));
+    align-items: center;
+    justify-content: center;
+}
+
+#home {display: flex;}
+
+section article{
+    padding-top: 5%;
+    text-align: center;
+}
+
+section article h1{
+    color: var(--cor6);
+    font-size: 4em;
+    font-weight: normal;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.26);
+}
+
+section article p {
+    font-size: 1.3em;
+    color: white;
+    padding: 10px 0;
+    margin: auto; 
+}
+
+section div{
+    height: 60%;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section:nth-of-type(1){
+    background-image: url(../imagens/chaleira.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+section:nth-of-type(3){
+    background-image: url(../imagens/fogueira.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+section:nth-of-type(5){
+    background-image: url(../imagens/predio.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+section div ul {
+    font-size: 2.4em;
+    margin: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+section div ul li a {
+    font-size: 0.8em;
+    margin: 10px;
+    color: white;
+    text-decoration: none; 
+}
+
+section div ul li a:hover {color: var(--cor6); transition: all 0.4s ease-in-out;}
+
+.espaçamento {height: 15vh;}
+
+/*INDEX: O que é termologia*/
+.oQueE{
+    display: flex;
+    padding-bottom: 10%;
+    width: 80%;
+    margin: auto;
+}
+
+.oQueE div{
+    width: 50%;
+    flex-direction: column;
+    height: auto;
+    text-align: left;
+}
+
+.oQueE div img{
+    width: 90%;
+}
+/*INDEX: Conceitos importantes*/
+#conceitos{height: auto;}
+
+#conceitos article{
+    padding: 5% 0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+}
+
+#conceitos article h2{
+    color: #D8572A;
+    font-size: 36px;
+    font-weight: normal;
+    text-align: left;
+    margin: 0 0 10px;
+}
+
+#conceitos article p{
+    font-size: 28px;
+    text-align: left;
+    margin: 0 0 10px;
+}
+
+/*INDEX: Áreas da termologia*/
+#vertentes{height: auto;}
+
+.areas{
+    display: flex;
+    margin: 0 auto;
+    padding-bottom: 10%;
+    flex-wrap: wrap;
+}
+
+.areas a{
+    text-decoration: none;
+    flex: 1 1 20%;
+    max-width: 45%;
+    max-height: 35%;
+    padding: 20px;
+    transition: 0.4s ease-in-out;
+}
+
+.areas a:hover{
+    transform: scale(1.1);
+    transition: all 0.4s ease-in-out;   
+}
+
+.areas a div{
+    display: block;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+.areas div h3{
+    color: var(--cor6);
+    font-size: 2.8em;
+    padding: 15px
+}
+
+.areas div img{
+    padding: 0;
+    margin: 0;
+    background-size: cover;
+    height: 50%;
+    width: 90%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.8);
+    border-radius: 15px;
+}
+
+.areas div p{
+    margin-top: 30px;
+    color: white;
+    font-size: 1.3em;
+    padding: 15px;
+}
+
+/*INDEX: Sobre a plataforma*/
+
+.coluna1{
+    display: block;
+    text-align: center;
+    align-content: center;
+}
+
+.coluna1, .coluna2 {
+    padding: 0 2rem;
+    font-size: 2em;
+    align-content: center;
+    height: auto;
+}
+
+.coluna1 .galeria {
+    display: block;
+    width: 60%;
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+    padding: 0;
+}
+
+.coluna1 .galeria .fotos {
+    width: 400%;
+    height: 100%;
+    background-size: cover;
+    animation-name: animacao;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    padding: 0;
+}
+
+.coluna1 .galeria .fotos img {
+    width: 25%;
+}
+
+.coluna2 {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 24px;
+    background-color: rgba(0, 0, 0, 0.438);
+    padding: 20px 20px;
+}
+
+@keyframes animacao {
+    0% { margin-left: 0; }
+    20% { margin-left: 0; }
+    25% { margin-left: -100%; }
+    45% { margin-left: -100%; }
+    50% { margin-left: -200%; }
+    70% { margin-left: -200%; }
+    75% { margin-left: -300%; }
+    95% { margin-left: -300%; }
+    100% { margin-left: -400%; }
+}
+
+footer{
+    background-color: var(--cor5);
+    color: white;
+    font-size: 1.2em;
+    padding: 30px;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+}
+
+/*INDEX: Formulário*/
+#Form {height: auto; padding: 30px;}
+
+#Form > div{ 
+    height: 40vh;
+    width: 80vw;
+}
+
+#Form div form{}
+
+#Form div form .colunas{ display: flex;}
+
+#Form div form .colunaA{display: block; text-align: right}
+
+#Form div form .colunaB{justify-content: start;}
+
+#Form input{
+    color: #000;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 30vw;
+    height: 8vh;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 0 0 5px 0;
+}
+
+#Form .boton {
+    width: 30vw;
+    margin: 5px 0 0 5px;
+    background-color: #881600;
+    color: white;
+    transition: 0.3s ease-in-out;
+}
+
+#Form .boton:hover{
+    width: 30.5vw;
+    height: 8.5vh;
+    background-color: #aa2e2e;
+    transition: 0.3s ease-in-out;
+}
+
+#Form textarea{
+    color: #000;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-width: 2px;
+    height: 25vh;
+    width: 30vw;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 0 0 5px 5px;
+}    
+/*PÁGINAS SECUNDÁRIAS*/
+main{
+    min-width: 300px;
+    max-width: 1000px;
+    top: 15vh;
+    margin: auto;
+    padding: 20px;
+    padding-top: 60px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.267);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    z-index: 1;
+}
+
+main article img{
+    display: block;
+    margin: 10px auto;
+    width: 50%;
+    height: 5%;
+}
+
+main .calculo{text-align: center;}
+
+main b{
+    color:#000;
+    font-size: 1.3em;
+    margin: 0 10px;
+}
+
+main article p{
+    margin: 20px 20px;
+    font-size: 1.2em
+}
+
+main article h1{
+    color: var(--cor5);
+    font-weight: normal;
+    font-size: 3em;
+    text-align: center;
+    padding: 10px 10px;
+}
+
+main article h2{
+    color: #ff0000;
+    font-size: 1.8em;
+    font-weight: normal;
+    text-indent: 8px;
+    margin: 10px;
+}
+
+main article h3{
+    color:#e88b01;
+    font-size: 1.5em;
+    font-weight: normal;
+    text-indent: 8px;
+    margin: 10px;
+}
+
+main article h4{
+    text-indent: 17px;
+}
+
+main strong{
+    background-color: #aa2e2e;
+    padding: 0 10px;
+    color: rgb(255, 255, 3);
+    font-weight: bolder;
+}
+
+main article > ul{
+    list-style-position: inside;
+    margin: 0 60px;
+    font-size: 1.2em;
+    list-style: disc;
+}
+
+main article ul li{
+    padding: 10px;
+}
+
+main img{
+    width: 100%;
+    height: 400px;
+}
+
+div.video{
+    background-color: var(--cor5);
+    border-radius: 10px;
+    margin: 30px 10px;
+    padding-bottom: 50%;
+    position: relative;
+}
+
+div.video >iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+.materiais{
+    display: flex;
+    justify-content: space-around;
+}
+.materiais a{
+    text-decoration: none;
+}
+
+.materiais .botao{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    background-color: transparent;
+    border: 2px solid black;
+    border-radius: 10px;
+    width:24vw;
+    height: 7vh;
+    padding: 20px;
+    margin: 20px 0;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 5px 5px #000;
+    font-size: 1.5rem;
+}
+
+.materiais .botao:hover{
+    width: 25vw;
+    height: 8vh;
+    transition: 0.3s ease-in-out;
+}
